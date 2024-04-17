@@ -54,7 +54,7 @@ ESC(English Study Club) 프로젝트는
 **기술 스택**   
 |Vue 3.0|JavaScript|Spring Boot|Spring Data JPA|Docker|Kubernetes|Jenkins|Prometheus|Grafana|
 |---|---|---|---|---|---|---|---|---|
-|<img src="https://github.com/beyond-sw-camp/be04-3rd-TeamPhoenix-ahub/blob/feature-post-check/img/Vue.png" height="60" />|<img src="https://github.com/beyond-sw-camp/be04-3rd-TeamPhoenix-ahub/blob/feature-post-check/img/js.png" height="80" />|  |  |
+|<img src="https://github.com/beyond-sw-camp/be04-3rd-TeamPhoenix-ahub/blob/feature-post-check/img/Vue.png" height="60" />|<img src="https://github.com/beyond-sw-camp/be04-3rd-TeamPhoenix-ahub/blob/feature-post-check/img/js.png" height="80" />|![icons8-봄-로고-48](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/434f3918-640f-4cef-8050-43ca415d6d4c)|![다운로드__1_-removebg-preview](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/82d8f3e5-9b6d-481b-92e3-0ff4a691b01b)|
 
 
 <br>

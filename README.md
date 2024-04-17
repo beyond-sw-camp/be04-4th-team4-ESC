@@ -74,6 +74,14 @@ ESC(English Study Club) 프로젝트는
 ## 2-5. 시스템 아키텍쳐
 
 ## 2-6. CICD 빌드/배포 문서 
+- CICD
+  ![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/1ce2f683-333c-4fc0-9310-d0671ee7843a)
+
+<br>
+
+
+
+
 
 ## 2-7. 테스트 케이스 & 결과 
 

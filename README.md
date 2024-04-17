@@ -11,11 +11,11 @@
 - 🦊 팀원 : **백동현**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/dongh810)
 
-- 🐰 팀원 : **이예원**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
+- 🧸 팀원 : **이예원**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/onelee521)
 
 - 🎀 팀원 : **박고은**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/goeunpark123)
 
 - 🐹 팀원 : **정우진**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Wrinkk)

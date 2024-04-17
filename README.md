@@ -1,5 +1,9 @@
-# ESC (English Study Club)
+# ESC (English Study Club) 
 
+### 로고
+  ![Group 63](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/33f78c72-f09c-435d-a057-e756ffa259c8)
+
+---
 
 ### 팀명: HighFives(Team HighFives)
 ### 팀원

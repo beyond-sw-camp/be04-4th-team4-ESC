@@ -8,19 +8,19 @@
 ### 팀명: HighFives(Team HighFives)
 ### 팀원
 
-- 팀원 : **백동현**
+- 🦊 팀원 : **백동현**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/dongh810)
 
-- 팀원 : **이예원**
+- 🐰 팀원 : **이예원**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
 
-- 팀원 : **박고은**
+- 🎀 팀원 : **박고은**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
 
-- 팀원 : **정우진**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
+- 🐹 팀원 : **정우진**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Wrinkk)
 
-- 팀원 : **정태원**
+- 🐭 팀원 : **정태원**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/t4e1)
 
 ---

@@ -67,9 +67,9 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 - 스터디 후 개인 스터디로그 작성
 
 ## 새롭게 도입한 기술
-- FullCalendar: 일정 관리
-- Chatting: 회원 간 대화
-- Crawling: 토익, 오픽 등 실제 시험일정 조회
+- FullCalendar: 일정 관리 (FullCalendar API)
+- Weebsocket: 회원 간 채팅 기능 구현 (spring-boot-starter-websocket,  Vanilla Javascript Websocket)  
+- Crawling: 토익, 오픽 등 실제 시험일정 조회 (JSoup)
 - SMTP(Simple Mail Transfer Protocol): 이메일 인증을 통한 회원관리
 
 ---

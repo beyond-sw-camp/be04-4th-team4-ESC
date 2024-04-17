@@ -34,22 +34,14 @@
 
 ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자 영어 공부할 때 집중력을 유지하기 어렵다고 느끼거나 그룹스터디를 하고싶은 사람들을 위해서 만들어졌다. 영어자격증 시험을 목표로 스터디원을 모으고 사용자들이 서로의 시간을 공유하여 함께 공부할 수 있는 최적의 시간을 찾아줌으로써 스터디 시간을 효율적으로 활용할 수 있도록 도와줄 것이다.
 
-## 주요기능
-- 스터디 클럽 생성 후 스터디원 모집
-- 채팅을 사용하여 모집하는 스터디에 대해 궁금증 해소 가능
-- 개인 일정 등록과 스터디 일정 등록
-- 스터디 후 개인 스터디로그 작성
-
 # 2. 프로젝트 관리 
 
  ESC 프로젝트의 산출 결과물은 다음과 같습니다.
-- **WBS** : 프로젝트 기간별 진행 과제를 정리한 문서
 - **요구사항 명세서** : 프로젝트의 요구사항을 정리하여 기능별로 분류해 둔 문서
 - **데이터베이스 모델링** : 프로젝트에 사용된 DB의 논리/물리 모델링 이미지
 - **Context Map** : DDD 방식 프로젝트 설계에 사용한 Conetext Map 이미지    
 - **시스템 아키텍쳐** : 프로젝트의 전체 시스템 아키텍쳐 이미지
 - **Devops 빌드/배포문서** :  CICD 구성을 위한 빌드 및 배포 방식을 설명하는 문서   
-- **테스트 케이스 정의서** : 요구사항에 해당하는 테스트 케이스를 보여주는 문서 
 - **테스트 결과** : 테스트 실행 결과 이미지  
 
 ## 추진 계획
@@ -68,25 +60,35 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 |<img src="https://github.com/beyond-sw-camp/be04-3rd-TeamPhoenix-ahub/blob/feature-post-check/img/Vue.png" height="60" />|<img src="https://github.com/beyond-sw-camp/be04-3rd-TeamPhoenix-ahub/blob/feature-post-check/img/js.png" height="80" />|![icons8-봄-로고-48](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/434f3918-640f-4cef-8050-43ca415d6d4c)|![다운로드__1_-removebg-preview](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/82d8f3e5-9b6d-481b-92e3-0ff4a691b01b)|![icons8-부두-노동자-96](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/547c5002-b2bb-49b7-afc8-f083846a0769)|![icons8-쿠버네티스-96](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/08d3f8ed-6755-4e79-aba2-8680a63dfa52)|![icons8-젠킨스-96](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/50215ec0-8598-4f6c-869a-2e795d69950f)|![icons8-프로메테우스-앱-96](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/b146f025-eed4-4af1-9db8-101cad3f78b6)|![icons8-그라파나-48](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/8afb44c6-75e1-4ca5-8072-2686600fdec9)|
 
 
-<br>
+## 주요기능
+- 스터디 클럽 생성 후 스터디원 모집
+- 채팅을 사용하여 모집하는 스터디에 대해 궁금증 해소 가능
+- 개인 일정 등록과 스터디 일정 등록
+- 스터디 후 개인 스터디로그 작성
 
-## 2-1. WBS
+## 새롭게 도입한 기술
+- FullCalendar: 일정 관리
+- Chatting: 회원 간 대화
+- Crawling: 토익, 오픽 등 실제 시험일정 조회
+- SMTP(Simple Mail Transfer Protocol): 이메일 인증을 통한 회원관리
+
+---
+
+## 2-1. 요구사항 명세서
 
 
-## 2-2. 요구사항 명세서
 
+## 2-2. DB 모델링(논리)
 
-<br>
+![KakaoTalk_20240417_123220669](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/e5f6fcfe-e910-4634-8862-d90b2d36bc53)
 
-## 2-3. DB 모델링
+## 2-3. Context Map 
 
-### 2-3-1. 논리 모델링
-
-### 2-3-2. 물리 모델링
-
-## 2-4. Context Map 
+![image](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/5b5bf0b4-8d35-43fb-8578-b10a57bf3f2d)
 
 ## 2-5. 시스템 아키텍쳐
+
+![KakaoTalk_20240417_120445057](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/1f8dcd6c-e925-4126-b637-ea91f1577b7f)
 
 - **Jenkins** <br>
 테스트 코드 실행, Docker Image 빌드, Dockerhub 업로드 
@@ -178,7 +180,7 @@ Deploy key 는 Jenkins 서버의 public Key 를 사용, Jenkins 서버로 SFTP�
 
 | 이름 | 내용 |
 | ----- | ----------|
-|    백동현   |  |
+| 백동현|  |
 | 곽고은 |  |
 | 이예원 | |
 |    정우진    |  |

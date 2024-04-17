@@ -115,19 +115,44 @@ Prometheus에서 수집한 Metric과 Log를 시각화하여 제공
 
 <details>
 <summary>Dockerfile</summary>
+  
 
-- Docker 이미지 생성에 사용 될 Docker 파일 생성
+- **Spring boot Dockerfile** <br>
+  - openjdk가 설치된 Dockerhub image 파일명 정의 <br>
+  - image 빌드에 사용할 jar파일 정의 <br>
+  - 진입 시 실행 될 명령어 정의 <br>
+    - jasypt의 secretkey 를 환경 변수로 넣어서 실행
+    
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/c932225b-cabb-48de-af39-d32f0b2120d3)   
+      
+- **Jenkins Dockerfile** <br>
 
+  - Jenkins가 설치된 Dockerhub image 파일명 정의 <br>
+  - Jenkins 실행에 필요한 apt 명령어 정의
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/f35c7ee2-a9db-4c35-a701-59e58d0da354)
+
+
+- **Jenkins docker-compose** <br>
+
+  - 사용할 Dockerfile 지정 <br> 
+  - Jenkins 컨테이너 이름과 포트 설정 <br>
+  - volumes 설정으로 로컬에서 jenkins에 올라온 프로젝트 실행할 수 있도록 설정 <br> 
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/e3c9f94b-ed8d-4074-84b5-038b00d0f60f)
 
 </details>
 
 <details>
 <summary>Github</summary>
 
-- Webhook & Deploy key 생성
+- **Webhook & Deploy key**
 
-  지정한 브랜치에 변화가 있을 경우 Webhook을 발생, Jenkins 로 Webhook 을 보낼 수 있다. <br>
-Deploy key 는 Jenkins 서버의 public Key 를 사용, Jenkins 서버로 SFTP로 변경된 코드를 전송한다.
+  - 지정한 브랜치에 변화가 있을 경우 Webhook을 발생, Jenkins 로 Webhook 을 보낸다. <br>
+  - Deploy key에는 Jenkins 서버의 public Key 를 사용, Jenkins 서버로 SSH를 통해 변경된 코드를 전송.
+
+![github-webhook](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/ed404102-52c9-44b3-b9bc-295844ba7ce6)
+![github-deploykey](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/91819a89-49a7-486e-82d3-ad1a85a50791)
 
 
 </details>
@@ -135,14 +160,82 @@ Deploy key 는 Jenkins 서버의 public Key 를 사용, Jenkins 서버로 SFTP�
 <details>
 <summary>Jenkins</summary>
 
+- **Credential**
+  - Github 접속을 허용하기 위해 ssh private key를 가진 Credential 생성
+  - Dockerhub 접속을 위해 Dockerhub 계정 정보를 가진 Credential 생성
+  
+![jenkins-credential1](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/4c381c2a-0611-453c-a4e9-49c4f88a4ed9)
 
+- **Security**
+  - Github의 Jenkins 접근을 위하여 ssh private key를 포함한 Secret 정책 생성
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/660e4c3e-2c05-4f50-897f-fb7a30306a48)
+
+- **Tools**
+
+  - 빌드에 사용할 jdk 버전과 build tool 정의
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/ae18f3d4-454f-4650-91ea-3f7a7dc7eb7b)
+
+
+- **Item(Pipeline)**
+
+  - Github 와 연동하여 Webhook을 감지할 때 마다 테스트하고 빌드를 진행할 아이템을 정의, 생성
+ 
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/56f2b83a-7ae5-4ff2-9d79-bcfd374ced97)
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/18880b4d-673a-41d7-aa17-15fd4e63160e)
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/831f97e0-b5b2-45df-9989-c3b93c78080a)
 
 </details>
 
 <details>
 <summary>Kubernetes</summary>
 
-- Webhook & Deploy key 생성
+- **Springboot Deployment**
+
+  - ESC 프로젝트의 컨테이너 명, 컨테이너 생성에 사용할 이미지, 생성될 레플리카의 수, 컨테이너 port 지정    
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/b58bed75-86ca-4417-a80a-2c51255706a5)
+
+
+- **Springboot Service**
+  - 외부에서 ESC 컨테이너에 접근하기 위한 워커 노드 포트(30003) 및 service(8008)와 deployment 포트(10001) 정의 
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/7e8357e1-a434-4086-b7ff-47c174871849)
+
+
+- **Prometheus Deployment**
+  - Prometheus 컨테이너 명, 컨테이너 생성에 사용할 이미지, 컨테이너 port, configmap 지정  
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/75435fc1-dd89-49e1-af92-457c24f06afc)
+
+
+- **Prometheus Service**
+  - 외부에서 Prometheus 컨테이너에 접근하기 위한 워커 노드 포트(30005) 및 service(9009)와 deployment(9090) 포트 정의 
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/2b7bcd7a-5f45-4130-a968-b53efaa6095b)
+
+
+</details>
+
+<details>
+<summary>CICD Result Image</summary>
+
+- **Jenkins Item(pipeline) running**
+
+![jenkis-stageview](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/a3ce927c-1407-48e5-bb53-434ab072a256)
+
+  
+- **Jenkins Image build**
+
+![jenkins-resultlog1](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/9f622d80-dbfd-4e5c-90ff-411844b3a84a)
+![jenkins-resultlog2](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/8b9dd47a-0860-4f79-b7cd-fe4367a294e9)
+
+  
+- **Kubernetes**
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/38e105a4-963e-4cba-8388-8e4d49f96ca2)
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/a156ac57-c6a1-459d-96df-99bd87272b65)
 
 
 </details>
@@ -172,6 +265,12 @@ Deploy key 는 Jenkins 서버의 public Key 를 사용, Jenkins 서버로 SFTP�
 - 1:1 채팅방 구현
 - 채팅 메세지 백엔드 처리
 - 채팅방 입장/퇴장 메세지 추가
+
+## 모니터링 
+- Springboot 이외에 DB server, Vue Project, Jenkins 등 등록된 다른 서비스 모니터링 추가 
+
+## CICD
+- Jenkins에서 Dockerhub image upload 후 자동으로 Kubernetes 리롤 할 수 있도록 인프라 공부해보기 (완전 자동화 구현)
 
 ## 기타
 

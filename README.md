@@ -14,7 +14,7 @@
 - 팀원 : **이예원**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
 
-- 팀원 : **곽고은**
+- 팀원 : **박고은**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">]
 
 - 팀원 : **정우진**

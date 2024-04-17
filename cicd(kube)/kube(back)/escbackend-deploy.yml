@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: escback-deployment
+spec:
+  selector:
+    matchLabels:
+      app: escback01
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: escback01
+    spec:
+      containers:
+      - name: boot-container
+        image: t4e1/esc:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 10001

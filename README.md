@@ -73,13 +73,61 @@ ESC(English Study Club) 프로젝트는
 
 ## 2-5. 시스템 아키텍쳐
 
-## 2-6. CICD 빌드/배포 문서 
-- CICD
+- **Jenkins** <br>
+테스트 코드 실행, Docker Image 빌드, Dockerhub 업로드 
+
+- **Dockerhub** <br>
+Jenkins가 생성한 최신화된 Docker image 저장 
+
+- **Kubernetes** <br>
+Dockerhub의 이미지를 사용, Spring boot & Prometheus의 컨테이너와 파드 관리
+
+- **Prometheus** <br>
+Spring boot 서버 Metric 수집, 서버 모니터링
+
+- **Grafana** <br>
+Prometheus에서 수집한 Metric과 Log를 시각화하여 제공
+
+## 2-6. CICD 빌드/배포 
+- **CICD 프로세스**
+
   ![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/108782390/1ce2f683-333c-4fc0-9310-d0671ee7843a)
 
 <br>
 
+<details>
+<summary>Dockerfile</summary>
 
+- Docker 이미지 생성에 사용 될 Docker 파일 생성
+
+
+</details>
+
+<details>
+<summary>Github</summary>
+
+- Webhook & Deploy key 생성
+
+  지정한 브랜치에 변화가 있을 경우 Webhook을 발생, Jenkins 로 Webhook 을 보낼 수 있다. <br>
+Deploy key 는 Jenkins 서버의 public Key 를 사용, Jenkins 서버로 SFTP로 변경된 코드를 전송한다.
+
+
+</details>
+
+<details>
+<summary>Jenkins</summary>
+
+
+
+</details>
+
+<details>
+<summary>Kubernetes</summary>
+
+- Webhook & Deploy key 생성
+
+
+</details>
 
 
 

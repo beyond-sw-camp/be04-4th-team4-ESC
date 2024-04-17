@@ -71,7 +71,8 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 - Weebsocket: 회원 간 채팅 기능 구현 (spring-boot-starter-websocket,  Vanilla Javascript Websocket)  
 - Crawling: 토익, 오픽 등 실제 시험일정 조회 (JSoup)
 - SMTP(Simple Mail Transfer Protocol): 이메일 인증을 통한 회원관리
-
+- Jasypt: 설정 파일 암호화 (Jasypt)
+- Monitoring: Prometheus, Grafana를 사용한 백엔드 모니터링
 ---
 
 ## 2-1. 요구사항 명세서

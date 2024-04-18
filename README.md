@@ -8,8 +8,9 @@
 ### 팀명: HighFives(Team HighFives)
 
 ### PROJECT
-BACK: [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Hi9hFive5/esc)
-FRONT: [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Hi9hFive5/esc-front)
+프로젝트 진행 과정을 볼 수 있습니다.
+- BACK: [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Hi9hFive5/esc)
+- FRONT: [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Hi9hFive5/esc-front)
 
 ### 팀원
 

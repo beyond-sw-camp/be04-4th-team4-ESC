@@ -254,6 +254,8 @@ Prometheus에서 수집한 Metric과 Log를 시각화하여 제공
 
 [ESC 프로젝트 - REST-API.pdf](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/files/15022305/ESC.-.REST-API.pdf)
 
+[ESC 프로젝트 - REST-API.pdf](https://github.com/dongh810/ESC-English_Study_Club-develop/files/15022318/ESC.-.REST-API.pdf)
+
 ## 2-8. 테스트 케이스 & 결과 
 ![스크린샷 2024-04-18 173556](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/188e63ef-8813-4ac9-8054-77b29de813ae)
 

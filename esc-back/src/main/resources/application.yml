@@ -1,0 +1,42 @@
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        '[format_sql]': true
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ENC(E7huCTzdt6/W2uc0zB5gvAe/75ODq9G7agaiUGIXe2zou8KeqXPWKgm3b7DT5s6U)
+    username: ENC(vxlNvVtFe811WHs1mQGPXw==)
+    password: ENC(d6hTP/Pj2kTlcyWQSLXIXw==)
+
+logging:
+  level:
+    root: INFO
+
+file:
+  upload-dir: C:/Users/wj830/Desktop/uploads/
+
+token:
+  expiration_time: 43200000
+  secret: ENC(EwOfV8d2HbHkTZKQmlccyXH1vGDcgK+vinRIpniCrjX019OTtH9M8tfWKVNMzzxYNG1kdnpWj06943Ob7NoMBiTQcxsMYsHUh5JbFjsEU3YHRQ3EnpKWrvxuUoMkDi1gNrOtOL2IfUM=)
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+
+mail:
+  id: ENC(tzW2oh9b3Wok7IocABRwov+8rAfBCWTj)
+  pwd: ENC(SG3fPii2hBFHco8Rx+scChrb9CkOPwsA)
+
+server:
+  port: 10001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus

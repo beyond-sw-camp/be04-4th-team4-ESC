@@ -79,9 +79,13 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 
 
 
-## 2-2. DB 모델링(논리)
+## 2-2. DB 모델링
+논리 모델링
+![esc_논리 모델링](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/64297541/90e945f4-a465-46a5-91b0-25434945b2da)
 
-![KakaoTalk_20240417_123220669](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/e5f6fcfe-e910-4634-8862-d90b2d36bc53)
+물리 모델링
+![esc_물리 모델링](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/64297541/05d40bd8-87ba-4790-80dd-5eae50ff7c89)
+
 
 ## 2-3. Context Map 
 

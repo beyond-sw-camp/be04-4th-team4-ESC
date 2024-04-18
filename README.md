@@ -278,7 +278,10 @@ Prometheus에서 수집한 Metric과 Log를 시각화하여 제공
 - 1:1 채팅방 구현
 - 채팅 메세지 백엔드 처리
 - 채팅방 입장/퇴장 메세지 추가
-- Vite <-> SpringBoot 간 STOMP 라이브러리를 사용할 수 있는 방법 찾기 
+- Vite <-> SpringBoot 간 STOMP 라이브러리를 사용할 수 있는 방법 찾기
+
+## 크롤링 기능
+- 크롤링하는 사이트에 새로 등록되는 시험일도 추가될 수 있게 주기적으로 자동 실행되도록 구현
 
 ## 모니터링 
 - Springboot 이외에 DB server, Vue Project, Jenkins 등 등록된 다른 서비스 모니터링 추가 

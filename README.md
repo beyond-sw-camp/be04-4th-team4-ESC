@@ -47,7 +47,8 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 - **데이터베이스 모델링** : 프로젝트에 사용된 DB의 논리/물리 모델링 이미지
 - **Context Map** : DDD 방식 프로젝트 설계에 사용한 Conetext Map 이미지    
 - **시스템 아키텍쳐** : 프로젝트의 전체 시스템 아키텍쳐 이미지
-- **Devops 빌드/배포문서** :  CICD 구성을 위한 빌드 및 배포 방식을 설명하는 문서   
+- **Devops 빌드/배포문서** :  CICD 구성을 위한 빌드 및 배포 방식을 설명하는 문서
+- **API명세서** : Rest API 요청방식과 예상 요청결과를 정리한 문서서 
 - **테스트 결과** : 테스트 실행 결과 이미지  
 
 ## 추진 계획
@@ -249,19 +250,80 @@ Prometheus에서 수집한 Metric과 Log를 시각화하여 제공
 
 </details>
 
+## 2-7. API 명세서
 
+[ESC 프로젝트 - REST-API.pdf](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/files/15022305/ESC.-.REST-API.pdf)
 
-## 2-7. 테스트 케이스 & 결과 
+## 2-8. 테스트 케이스 & 결과 
+![스크린샷 2024-04-18 173556](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/188e63ef-8813-4ac9-8054-77b29de813ae)
 
 <details>
-<summary>테스트1 결과</summary>
+<summary>로그인 기능 테스트 결과</summary>
+
+![userserviceTest 결과](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/949785f8-3846-45c5-b383-9595f5f5c315)
 
 </details>
 
 <details>
-<summary>테스트2 결과</summary>
+<summary>채팅방 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/0c51968d-49a5-42c2-8d86-077b79a00597)
 
 </details>
+
+<details>
+<summary>멤버 일정 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/ae4c79f1-4daa-40a9-8e36-55991e930d15)
+
+</details>
+
+<details>
+<summary>스터디 일정 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/75daa1c6-f212-450e-840a-14cc65f3a1c9)
+
+</details>
+
+<details>
+<summary>스터디클럽 로그 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/eda9d4e4-1cae-4fd9-8f44-0835b3ce503c)
+
+</details>
+
+<details>
+<summary>스터디클럽 멤버 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/9b0de58a-b6d5-433f-9621-a642d5570e82)
+
+</details>
+
+<details>
+<summary>회원 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/59e914eb-f057-4da2-bcbd-bee09423a0b2)
+
+</details>
+
+<details>
+<summary>모집 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/7b0047a7-051f-419e-8710-354ad7552dc0)
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/530b5903-e0ae-4f37-92a9-5d642cfca618)
+
+</details>
+
+<details>
+<summary>스터디클럽 테스트 결과</summary>
+
+![image](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/assets/105986200/e5982c66-b836-4831-979f-c02a48fab297)
+
+</details>
+
+
+
 
 <br>
 

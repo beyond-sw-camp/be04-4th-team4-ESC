@@ -6,6 +6,11 @@
 ---
 
 ### 팀명: HighFives(Team HighFives)
+
+### PROJECT
+BACK: [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Hi9hFive5/esc)
+FRONT: [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Hi9hFive5/esc-front)
+
 ### 팀원
 
 - 🦊 팀원 : **백동현**

@@ -15,5 +15,5 @@ public interface StudyclubMemberRepository extends JpaRepository<StudyclubMember
 
     @Modifying
     @Query(value = "DELETE FROM studyclub_member WHERE member_id = :memberId AND studyclub_id = :studyclubId", nativeQuery = true)
-    void deleteByMemberIdAndStudyclubId(@Param("memberId") String memberId, @Param("studyclubId") String studyclubId);
+    void deleteByMemberIdAndStudyclubId(@Param("memberId") int memberId, @Param("studyclubId") int studyclubId);
 }

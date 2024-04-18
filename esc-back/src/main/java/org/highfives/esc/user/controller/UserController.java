@@ -156,8 +156,8 @@ public class UserController {
     }
 
     /* 설명. 회원 탈퇴 기능 */
-    @PutMapping("/Withdrawal/{id}")
-    public ResponseEntity<UserDTO> userWithdrawalById(UserDTO userDTOData) {
+    @PutMapping("/Withdrawal")
+    public ResponseEntity<UserDTO> userWithdrawalById(@RequestBody UserDTO userDTOData) {
 
         UserDTO userDTO = userService.userWithdrawalById(userDTOData);
 

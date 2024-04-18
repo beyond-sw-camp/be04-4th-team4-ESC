@@ -15,7 +15,6 @@ import java.util.List;
 public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    @Mapping(target = "id", source = "id")
     UserDTO userToUserDTO(UserEntity user);
 
     @Mapping(target = "id", source = "id")

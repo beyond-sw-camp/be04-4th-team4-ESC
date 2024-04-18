@@ -192,7 +192,7 @@ public class UserServiceImpl implements UserService {
                 .nickname(userInfo.getNickname())
                 .endDate(userInfo.getEndDate())
                 .report_count(userInfo.getReportCount())
-                .status(banUser.getStatus())
+                .status("Y")
                 .build();
 
         userRepository.save(userMapper.userDTOToUser(userDTO));
@@ -288,7 +288,7 @@ public class UserServiceImpl implements UserService {
         UserEntity userInfo = userRepository.findById((long) userDTOData.getId()).orElseThrow(IllegalArgumentException::new);
 
         UserDTO userDTO = UserDTO.builder()
-                .id(userInfo.getId())
+                .id(userDTOData.getId())
                 .name(userInfo.getName())
                 .grade(userInfo.getGrade() )
                 .point(userInfo.getPoint())
@@ -297,7 +297,7 @@ public class UserServiceImpl implements UserService {
                 .nickname(userInfo.getNickname())
                 .endDate(userInfo.getEndDate())
                 .report_count(userInfo.getReportCount())
-                .status(userDTOData.getStatus())
+                .status("Y")
                 .build();
         userRepository.save(userMapper.userDTOToUser(userDTO));
 

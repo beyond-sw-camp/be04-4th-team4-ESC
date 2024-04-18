@@ -9,7 +9,7 @@ public interface StudyclubMemberService {
 
 
 
-    void deleteByMemberIdAndStudyclubId(String memberId, String studyclubId);
+    void deleteByMemberIdAndStudyclubId(StudyclubMemberDTO studyclubMemberData);
 
     StudyclubMemberDTO insetMemberById(StudyclubMemberDTO studyclubMemberDTOData);
 }

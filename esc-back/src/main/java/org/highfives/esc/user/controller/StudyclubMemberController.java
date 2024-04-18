@@ -29,11 +29,10 @@ public class StudyclubMemberController {
     }
 
     /* 설명. 스터디 클럽 멤버 제거 기능 */
-    @DeleteMapping("/deleteMember/{memberId}/{studyclubId}")
-    public ResponseEntity<StudyclubMemberDTO> deleteByMemberIdAndStudyclubId(@PathVariable("memberId") String memberId,
-                                                                             @PathVariable("studyclubId") String studyclubId) {
+    @DeleteMapping("/deleteMember")
+    public ResponseEntity<StudyclubMemberDTO> deleteByMemberIdAndStudyclubId(@RequestBody StudyclubMemberDTO studyclubMemberData) {
 
-        studyclubMemberService.deleteByMemberIdAndStudyclubId(memberId, studyclubId);
+        studyclubMemberService.deleteByMemberIdAndStudyclubId(studyclubMemberData);
 
         return ResponseEntity.ok().build();
     }

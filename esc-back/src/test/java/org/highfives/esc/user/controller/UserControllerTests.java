@@ -197,7 +197,7 @@ class UserControllerTests {
 
     }
 
-    @DisplayName("프로젝트 참여 회원 이름 테스트")
+    @DisplayName("스터디클럽 참여 회원 이름 테스트")
     @Test
     @Transactional
     void findJoinMemberAndNameById() {

@@ -40,8 +40,9 @@ public class StudyclubMemberServiceImpl implements StudyclubMemberService {
     }
 
     @Override
-    public void deleteByMemberIdAndStudyclubId(String memberId, String studyclubId) {
-
-        studyclubMemberRepository.deleteByMemberIdAndStudyclubId(memberId,studyclubId);
+    public void deleteByMemberIdAndStudyclubId(StudyclubMemberDTO studyclubMemberData) {
+        int memberId = studyclubMemberData.getMemberId();
+        int StudyclubId = studyclubMemberData.getStudyclubId();
+        studyclubMemberRepository.deleteByMemberIdAndStudyclubId(memberId, StudyclubId);
     }
 }

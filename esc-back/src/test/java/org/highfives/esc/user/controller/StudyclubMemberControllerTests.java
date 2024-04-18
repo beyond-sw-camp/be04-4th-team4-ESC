@@ -50,11 +50,16 @@ class StudyclubMemberControllerTests {
     @Transactional
     void deleteByMemberIdAndStudyclubId() {
         // Given
-        String memberId = "1";
-        String studyclubId = "1";
+        int memberId = 1;
+        int studyclubId = 1;
+        StudyclubMemberDTO studyclubMemberDTO = StudyclubMemberDTO.builder()
+                .memberId(memberId)
+                .studyclubId(studyclubId)
+                .build();
+
 
         // When
-        studyclubMemberService.deleteByMemberIdAndStudyclubId(memberId, studyclubId);
+        studyclubMemberService.deleteByMemberIdAndStudyclubId(studyclubMemberDTO);
 
         // Then
 

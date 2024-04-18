@@ -98,25 +98,25 @@ class StudyclubLogControllerTests {
 
     }
 
-//    @DisplayName("스터디 로그 조회 기능 테스트")
-//    @Test
-//    @Transactional
-//    void findStudyLogById() throws IllegalAccessException {
-//        // Given
-//        String studyclubId = "1";
-//
-//        // When
-//            StudyclubLogDTO studyLogById = studyclubLogService.findStudyLogById(studyclubId);
-//
-//            // Then
-//            assertThat(studyLogById).isNotNull();
-//            assertThat(studyLogById.getStudyclubId()).isEqualTo(Integer.valueOf(studyclubId));
-//
-//
-//
-//
-//
-//    }
+    @DisplayName("스터디 로그 조회 기능 테스트")
+    @Test
+    @Transactional
+    void findStudyLogById() throws IllegalAccessException {
+        // Given
+        String studyclubId = "1";
+
+        // When
+            StudyclubLogDTO studyLogById = studyclubLogService.findStudyLogById(studyclubId);
+
+            // Then
+            assertThat(studyLogById).isNotNull();
+            assertThat(studyLogById.getStudyclubId()).isEqualTo(Integer.valueOf(studyclubId));
+
+
+
+
+
+    }
 
     @DisplayName("스터디 그룹 작성 된 로그 조회 기능 테스트")
     @Test

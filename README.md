@@ -286,8 +286,6 @@ Prometheus에서 수집한 Metric과 Log를 시각화하여 제공
 ## CICD
 - Jenkins에서 Dockerhub image upload 후 자동으로 Kubernetes 리롤 할 수 있도록 인프라 공부해보기 (완전 자동화 구현)
 
-## 기타
-
 <br>
 
 # 4. 프로젝트 회고

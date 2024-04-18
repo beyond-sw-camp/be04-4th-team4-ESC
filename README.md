@@ -82,8 +82,7 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 ---
 
 ## 2-1. 요구사항 명세서
-
-
+![스크린샷 2024-04-18 163950](https://github.com/dongh810/ESC-English_Study_Club-develop/assets/105986200/67c179b7-83e7-4de2-baee-0cdb376f2df2)
 
 ## 2-2. DB 모델링
 논리 모델링

@@ -106,7 +106,7 @@ ESC(English Study Club) 프로젝트는 영어의 필요성을 깨닫고, 혼자
 
 ## 2-9. UI
 
-🔗 
+🔗 [UI](https://github.com/beyond-sw-camp/be04-4th-team4-ESC/wiki/UI)
 
 
 

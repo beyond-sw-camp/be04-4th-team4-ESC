@@ -44,7 +44,7 @@ let formattedEnrolldate = ''; // formattedEnrolldate 변수를 전역으로 선�
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`http://localhost:30003/studyLog/find/${id}`);
+    const response = await axios.get(`http://localhost:30003/studylog/find/${id}`);
     logData.value = response.data;
     console.log(logData)
     studyclubId = logData.value.studyclubId;
@@ -73,7 +73,7 @@ const router = useRouter();
 
 const deleteLog = async () => {
   try {
-    await axios.delete(`http://localhost:30003/studyLog/delete/${id}`);
+    await axios.delete(`http://localhost:30003/studylog/delete/${id}`);
     console.log('삭제 성공');
     // 페이지를 다른 페이지로 이동시키는 코드
     await router.push(`/studyclub/${studyclubId}`);

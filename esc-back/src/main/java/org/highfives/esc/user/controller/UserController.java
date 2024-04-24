@@ -138,7 +138,7 @@ public class UserController {
 
     /* 설명. 회원이 참여한 스터디 클럽 조회 */
 
-    @GetMapping("/joinStudyClub/{member_id}")
+    @GetMapping("/join-studyclub/{member_id}")
     public ResponseEntity<List<StudyclubInfoDTO>> findJoinStudyClubById(@PathVariable("member_id") String memberId) {
 
         List<StudyclubInfoDTO> studyclubMemberDTO = userService.findJoinStudyClubById(memberId);
@@ -147,7 +147,7 @@ public class UserController {
     }
 
     /* 설명. 회원의 포인트 변경 업데이트 */
-    @PutMapping("/getUserPoint")
+    @PutMapping("/get-user-point")
     public ResponseEntity<UserDTO> getUserPoint(@RequestBody UserDTO userDTOData) {
 
         UserDTO userDTO = userService.getUserPoint(userDTOData);
@@ -156,7 +156,7 @@ public class UserController {
     }
 
     /* 설명. 회원 탈퇴 기능 */
-    @PutMapping("/Withdrawal")
+    @PutMapping("/withdrawal")
     public ResponseEntity<UserDTO> userWithdrawalById(@RequestBody UserDTO userDTOData) {
 
         UserDTO userDTO = userService.userWithdrawalById(userDTOData);
@@ -167,7 +167,7 @@ public class UserController {
 
 
     /* 설명. 스터디 참여 회원 이름 조회 */
-    @GetMapping("/findJoinMemberAndName/{studyclub_id}")
+    @GetMapping("/find-join-member-and-name/{studyclub_id}")
     public ResponseEntity<List<UserInfoDTO>> findJoinMemberAndNameById(@PathVariable("studyclub_id") String studyclubId){
 
         List<UserInfoDTO> userInfoDTO = userService.findJoinMemberAndNameById(studyclubId);

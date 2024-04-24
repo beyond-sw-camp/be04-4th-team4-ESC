@@ -47,7 +47,7 @@ async function createLog() {
   try {
     const selectedScheduleId = selectedSchedule.value; // 선택한 일정의 ID 값을 가져옴
     console.log(selectedScheduleId)
-    await axios.post(`http://localhost:30003/studyLog/insert`, {
+    await axios.post(`http://localhost:30003/studylog/insert`, {
       studyclubId: studyclubId,
       content: logTitle.value,
       contentInfo: logContent.value,

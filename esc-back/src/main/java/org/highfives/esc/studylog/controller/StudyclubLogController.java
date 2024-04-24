@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/studyLog")
+@RequestMapping("/studylog")
 public class StudyclubLogController {
 
     private final StudyclubLogService studyclubLogService;
@@ -59,7 +59,7 @@ public class StudyclubLogController {
     }
 
     /* 설명. 스터디 그룹 작성 된 로그 조회 기능 */
-    @GetMapping("/findStudyclubLog/{studyclub_id}")
+    @GetMapping("/find-studyclublog/{studyclub_id}")
     public ResponseEntity<List<StudyclubLogInfoDTO>> findStudyclubLogById(@PathVariable("studyclub_id") String studyclubId){
 
         List<StudyclubLogInfoDTO> studyclubLogDTO = studyclubLogService.findStudyclubLogById(studyclubId);
@@ -68,7 +68,7 @@ public class StudyclubLogController {
     }
 
     /* 설명. 작성한 로그 확인 기능 */
-    @GetMapping("/findWritingStudyclubLogById/{id}")
+    @GetMapping("/find-writing-studyclublog/{id}")
     public ResponseEntity<List<StudyclubLogMemberInfoDTO>> findWritingStudyclubLogById(@PathVariable("id") String id){
 
         List<StudyclubLogMemberInfoDTO> studyclubLogDTO = studyclubLogService.findWritingStudyclubLogById(id);

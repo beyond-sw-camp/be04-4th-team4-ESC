@@ -40,7 +40,7 @@ onMounted(async () => {
 // 멤버목록 가져오기
 async function fetchMember(id) {
     try {
-        const response = await axios.get(`http://localhost:30003/user/findJoinMemberAndName/${id}`);
+        const response = await axios.get(`http://localhost:30003/user/find-join-member-and-name/${id}`);
         const data = response.data;
 
         unselectedMembers.value = data;

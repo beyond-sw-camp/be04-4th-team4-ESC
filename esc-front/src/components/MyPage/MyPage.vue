@@ -116,7 +116,7 @@
 
   const fetchUserStudyclub = async() => {
     try {
-      const response = await fetch(`/api/user/joinStudyClub/${id}`);
+      const response = await fetch(`/api/user/join-studyclub/${id}`);
 
       if(!response.ok) {
           throw new Error('response is not ok');
@@ -147,7 +147,7 @@
 
   const fetchUserLog = async() => {
     try {
-      const response = await fetch(`/api/studyLog/findWritingStudyclubLogById/${id}`);
+      const response = await fetch(`/api/studylog/find-writing-studyclublog/${id}`);
 
       if(!response.ok) {
           throw new Error('response is not ok');
@@ -244,7 +244,7 @@
     }
 
     try {
-      const response = await fetch('/api/studyclubMember/insertMember', {
+      const response = await fetch('/api/studyclub-member/insert-member', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'

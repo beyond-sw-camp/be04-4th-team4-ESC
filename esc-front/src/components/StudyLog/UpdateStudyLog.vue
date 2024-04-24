@@ -40,7 +40,7 @@
   
     onMounted(async () => {
       try {
-        const response = await axios.get(`http://localhost:30003/studyLog/find/${id}`)
+        const response = await axios.get(`http://localhost:30003/studylog/find/${id}`)
         logData.value = response.data;
         editedTitle.value = logData.value.content;
         editedContent.value = logData.value.contentInfo;
@@ -58,7 +58,7 @@
               contentInfo: editedContent.value
             };
             console.log(updateData);
-        await axios.put(`http://localhost:30003/studyLog/update`, updateData);
+        await axios.put(`http://localhost:30003/studylog/update`, updateData);
         console.log('수정 완료');
         await router.push(`/studyLog/${id}`); // 수정 완료 후 해당 스터디 로그 페이지로 이동
         

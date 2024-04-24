@@ -86,7 +86,7 @@ const fetchStudySchedule = async (id) => {
 const members = ref();
 async function fetchMember() {
     try {
-        const response = await axios.get(`http://localhost:30003/user/findJoinMemberAndName/${studyclubId.value}`);
+        const response = await axios.get(`http://localhost:30003/user/find-join-member-and-name/${studyclubId.value}`);
         const data = response.data;
 
         members.value = data;

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/studyclubMember")
+@RequestMapping("/studyclubmember")
 public class StudyclubMemberController {
     private final StudyclubMemberService studyclubMemberService;
 
@@ -20,7 +20,7 @@ public class StudyclubMemberController {
     }
 
     /* 설명. 스터디 클럽 멤버 추가 기능 */
-    @PostMapping("/insertMember")
+    @PostMapping("/insert-member")
     public ResponseEntity<StudyclubMemberDTO> insertMemberById(@RequestBody StudyclubMemberDTO studyclubMemberDTOData) {
 
         StudyclubMemberDTO studyclubMemberDTO = studyclubMemberService.insetMemberById(studyclubMemberDTOData);
@@ -29,7 +29,7 @@ public class StudyclubMemberController {
     }
 
     /* 설명. 스터디 클럽 멤버 제거 기능 */
-    @DeleteMapping("/deleteMember")
+    @DeleteMapping("/delete-member")
     public ResponseEntity<StudyclubMemberDTO> deleteByMemberIdAndStudyclubId(@RequestBody StudyclubMemberDTO studyclubMemberData) {
 
         studyclubMemberService.deleteByMemberIdAndStudyclubId(studyclubMemberData);

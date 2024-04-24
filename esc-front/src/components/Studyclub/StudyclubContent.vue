@@ -157,12 +157,12 @@ const navigateTo = (path) => {
 onMounted(async () => {
 
     try {
-        const response1 = await axios.get(`/api/user/findJoinMemberAndName/${studyclubId}`)
+        const response1 = await axios.get(`/api/user/find-join-member-and-name/${studyclubId}`)
         // 요청이 성공했을 때 받은 데이터를 Vue 컴포넌트 데이터에 저장
         userinfos.value = response1.data
         console.log(userinfos);
 
-        const response2 = await axios.get(`/api/studyLog/findStudyclubLog/${studyclubId}`)
+        const response2 = await axios.get(`/api/studylog/find-studyclublog/${studyclubId}`)
         // 요청이 성공했을 때 받은 데이터를 Vue 컴포넌트 데이터에 저장
         studylogs.value = response2.data
         console.log(studylogs);
